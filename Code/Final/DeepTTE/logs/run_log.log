@@ -1,0 +1,30 @@
+Net(
+  (attr_net): Net(
+    (weekID_em): Embedding(7, 3)
+    (timeID_em): Embedding(1440, 8)
+  )
+  (spatio_temporal): Net(
+    (geo_conv): Net(
+      (state_em): Embedding(2, 2)
+      (process_coords): Linear(in_features=4, out_features=16, bias=True)
+      (conv): Conv1d(16, 16, kernel_size=(1,), stride=(1,))
+    )
+    (rnn): LSTM(29, 128, num_layers=2, batch_first=True)
+    (attr2atten): Linear(in_features=12, out_features=128, bias=True)
+  )
+  (entire_estimate): EntireEstimator(
+    (input2hid): Linear(in_features=140, out_features=128, bias=True)
+    (residuals): ModuleList(
+      (0): Linear(in_features=128, out_features=128, bias=True)
+      (1): Linear(in_features=128, out_features=128, bias=True)
+      (2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (hid2out): Linear(in_features=128, out_features=1, bias=True)
+  )
+  (local_estimate): LocalEstimator(
+    (input2hid): Linear(in_features=128, out_features=64, bias=True)
+    (hid2hid): Linear(in_features=64, out_features=32, bias=True)
+    (hid2out): Linear(in_features=32, out_features=1, bias=True)
+  )
+)
+[('alpha', 0.1), ('batch_size', 32), ('config_file', './config/config_link.json'), ('elu', 0), ('epochs', 50), ('kernel_size', 1), ('log_file', 'run_log'), ('model_num', '1_month_remove_geoconv_elu'), ('pooling_method', 'attention'), ('result_file', './result/deeptte.res'), ('save_result_file', './1_month_remove_geoconv_elu/save_loss/loss_1'), ('task', 'train'), ('tensorboard', './1_month_remove_geoconv_elu/runs'), ('weight_file', './1_month_remove_geoconv_elu/weights/saved_weights_1')]

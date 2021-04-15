@@ -1,0 +1,20 @@
+{
+    "dist_gap_mean": 0.2461491339674,
+    "dist_gap_std": 0.3530600850744,
+    "time_gap_mean": 0.07126660985,
+    "time_gap_std": 1.1287178785,
+    "lngs_mean": 127.04655204,
+    "lngs_std": 0.0480618745,
+    "lats_mean": 37.5045222667,
+    "lats_std": 0.021345182392,
+    "dist_mean": 6.050835008,
+    "dist_std": 4.88334449742,
+    "time_mean": 1021.1953959191,
+    "time_std": 697.39758254227,
+    "track_travel_time_mean": 1021.1953959191,
+    "track_travel_time_std": 697.39758254227,
+    "train_set": ["../../Data/preprocessing_link_seoul/data_01","../../Data/preprocessing_link_seoul/data_02","../../Data/preprocessing_link_seoul/data_04","../../Data/preprocessing_link_seoul/data_05","../../Data/preprocessing_link_seoul/data_06","../../Data/preprocessing_link_seoul/data_08","../../Data/preprocessing_link_seoul/data_09","../../Data/preprocessing_link_seoul/data_10","../../Data/preprocessing_link_seoul/data_11","../../Data/preprocessing_link_seoul/data_12","../../Data/preprocessing_link_seoul/data_13","../../Data/preprocessing_link_seoul/data_14","../../Data/preprocessing_link_seoul/data_15","../../Data/preprocessing_link_seoul/data_16","../../Data/preprocessing_link_seoul/data_17","../../Data/preprocessing_link_seoul/data_18","../../Data/preprocessing_link_seoul/data_19","../../Data/preprocessing_link_seoul/data_20","../../Data/preprocessing_link_seoul/data_21","../../Data/preprocessing_link_seoul/data_24","../../Data/preprocessing_link_seoul/data_25","../../Data/preprocessing_link_seoul/data_26","../../Data/preprocessing_link_seoul/data_27","../../Data/preprocessing_link_seoul/data_28","../../Data/preprocessing_link_seoul/data_29","../../Data/preprocessing_link_seoul/data_30","../../Data/preprocessing_link_seoul/data_31","../../Data/preprocessing_link_seoul/data_32","../../Data/preprocessing_link_seoul/data_33","../../Data/preprocessing_link_seoul/data_34","../../Data/preprocessing_link_seoul/data_35","../../Data/preprocessing_link_seoul/data_36","../../Data/preprocessing_link_seoul/data_38","../../Data/preprocessing_link_seoul/data_39","../../Data/preprocessing_link_seoul/data_40","../../Data/preprocessing_link_seoul/data_42","../../Data/preprocessing_link_seoul/data_43","../../Data/preprocessing_link_seoul/data_44","../../Data/preprocessing_link_seoul/data_45","../../Data/preprocessing_link_seoul/data_46","../../Data/preprocessing_link_seoul/data_47","../../Data/preprocessing_link_seoul/data_48","../../Data/preprocessing_link_seoul/data_49","../../Data/preprocessing_link_seoul/data_50","../../Data/preprocessing_link_seoul/data_51","../../Data/preprocessing_link_seoul/data_52","../../Data/preprocessing_link_seoul/data_54","../../Data/preprocessing_link_seoul/data_55","../../Data/preprocessing_link_seoul/data_56","../../Data/preprocessing_link_seoul/data_57","../../Data/preprocessing_link_seoul/data_58","../../Data/preprocessing_link_seoul/data_59","../../Data/preprocessing_link_seoul/data_60","../../Data/preprocessing_link_seoul/data_61","../../Data/preprocessing_link_seoul/data_62","../../Data/preprocessing_link_seoul/data_64","../../Data/preprocessing_link_seoul/data_65","../../Data/preprocessing_link_seoul/data_66","../../Data/preprocessing_link_seoul/data_67"],
+	"eval_set": ["../../Data/preprocessing_link_seoul/data_41","../../Data/preprocessing_link_seoul/data_68","../../Data/preprocessing_link_seoul/data_69"],
+    "test_set": ["../../Data/preprocessing_link2019_04/data_03"]
+}
+

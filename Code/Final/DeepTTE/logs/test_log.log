@@ -1,0 +1,30 @@
+Net(
+  (attr_net): Net(
+    (weekID_em): Embedding(7, 3)
+    (timeID_em): Embedding(1440, 8)
+  )
+  (spatio_temporal): Net(
+    (geo_conv): Net(
+      (state_em): Embedding(2, 2)
+      (process_coords): Linear(in_features=4, out_features=16, bias=True)
+      (conv): Conv1d(16, 16, kernel_size=(3,), stride=(1,))
+    )
+    (rnn): LSTM(29, 128, num_layers=2, batch_first=True)
+    (attr2atten): Linear(in_features=12, out_features=128, bias=True)
+  )
+  (entire_estimate): EntireEstimator(
+    (input2hid): Linear(in_features=140, out_features=128, bias=True)
+    (residuals): ModuleList(
+      (0): Linear(in_features=128, out_features=128, bias=True)
+      (1): Linear(in_features=128, out_features=128, bias=True)
+      (2): Linear(in_features=128, out_features=128, bias=True)
+    )
+    (hid2out): Linear(in_features=128, out_features=1, bias=True)
+  )
+  (local_estimate): LocalEstimator(
+    (input2hid): Linear(in_features=128, out_features=64, bias=True)
+    (hid2hid): Linear(in_features=64, out_features=32, bias=True)
+    (hid2out): Linear(in_features=32, out_features=1, bias=True)
+  )
+)
+[('alpha', 0.7), ('batch_size', 10), ('config_file', './config/config_3_month.json'), ('epochs', 100), ('kernel_size', 3), ('log_file', 'test_log'), ('model_num', 'test_0818'), ('pooling_method', 'attention'), ('result_file', './test_0818/Test_result/result'), ('save_result_file', './test_0818/save_loss/test_log'), ('task', 'train'), ('tensorboard', './test_0818/runs'), ('weight_file', './test_0818/weights')]
